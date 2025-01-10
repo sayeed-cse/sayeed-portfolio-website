@@ -1,0 +1,14 @@
+.head-section {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.section-heading {
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+.section-heading span {
+    color: var(--primary);
+}
