@@ -42,10 +42,14 @@ header {
 
 .nav.container .branding {
     margin-right: 48px;
+    display: flex;
+    align-items: center;
 }
-.nav.container .branding img{
-    height: 64px;
+
+.nav.container .branding img {
+    height: 98px;
 }
+
 .nav-left,
 .nav-left ul {
     display: flex;
@@ -487,6 +491,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 150px;
+    margin-bottom: 50px;
 }
 
 .contact-us-section .contacts .contact {
@@ -517,9 +522,10 @@ header {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    
+
 }
-.message fieldset legend{
+
+.message fieldset legend {
     color: var(--ternary);
 }
 
@@ -535,45 +541,368 @@ header {
     grid-column: 1/span 2;
 }
 
-.message .submit-btn{
+.message .submit-btn {
     justify-self: center;
     border: none;
     padding: 12px 28px;
     color: var(--dark);
     font-weight: 500;
 }
+
 /* contact us section end */
 
 /* footer start */
-footer{
+footer {
     background-color: var(--dark);
 }
-footer .footer-logo{
-    border-bottom: 1px solid gray;
+
+footer .footer-logo {
+    border-bottom: 1px solid var(--primary);
     margin-bottom: 32px;
 }
 
-footer .footer-logo img{
+footer .footer-logo img {
     height: 128px;
-    
+
 }
-footer .social{
+
+footer .social {
     display: flex;
     justify-content: center;
     gap: 32px;
 }
+
 footer .social a {
     height: 52px;
     width: 52px;
-
 }
-footer .social a:hover img{
+
+footer .social a:hover img {
     background-color: #7545338e;
     box-shadow: 0px 0px 25px #fc784896;
     border-radius: 50%;
+}
 
+footer .copyright {
+    color: var(--ternary);
+    margin-top: 20px;
+}
 
+footer .copyright a {
+    text-decoration: none;
+    color: var(--ternary);
 
 }
 
+footer .copyright a:hover {
+    color: var(--primary);
+}
+
 /* footer end */
+
+/* responsive style tablet start */
+@media screen and (max-width:768px) {
+    .nav.container .branding {
+        margin-right: 0px;
+    }
+
+    .nav.container .branding img {
+        height: 56px;
+    }
+
+    .nav-left,
+    .nav-left ul {
+        gap: 14px;
+    }
+
+    .nav {
+        padding: 12px 0;
+        justify-content: space-around;
+    }
+
+    .hero .container {
+        padding: 20px;
+
+        gap: 30px;
+        padding-bottom: 120px;
+    }
+
+    .hero-details {
+        width: 85%;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+
+    .hero-details h1 {
+        font-size: 32px;
+    }
+
+    .hero-details p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .about-me {
+        gap: 12px;
+        padding-top: 62px;
+        padding-bottom: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-details {
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-me-details h6 {
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .about-me-details p {
+        text-align: justify;
+    }
+
+    .head-section {
+        padding: 52px 0;
+    }
+
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin: 0 20px;
+    }
+
+    .services-cards .card {
+        padding: 24px;
+
+        margin-top: 80px;
+    }
+
+    .freelancer-section h2 {
+        font-size: 32px;
+    }
+
+    .freelancer-section {
+        padding: 84px 0;
+        gap: 12px;
+    }
+
+    .our-client-section .head-section {
+        padding: 52px 20px;
+    }
+
+    .our-client-section .head-section h5 {
+        font-size: 16px;
+        padding: 4px 0;
+    }
+
+    .our-client-section .head-section p {
+        width: 100%;
+    }
+
+    .slide .review-text {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .our-work-section {
+        margin-top: 52px;
+    }
+
+    .our-work-section .head-section {
+        padding: 52px 0;
+    }
+
+    .our-blog-section .head-section {
+        padding: 52px 0;
+    }
+
+    .our-blog-section .container {
+        padding: 0 20px;
+        gap: 18px;
+    }
+
+    .our-blog-section .card-details {
+        padding: 18px;
+    }
+
+    .contact-us-section {
+        margin: 0px 0;
+    }
+
+    .contact-us-section .head-section {
+        padding: 52px 0;
+    }
+
+    .contact-us-section .contacts {
+        gap: 52px;
+        margin-bottom: 32px;
+    }
+
+    footer.head-section {
+        padding: 52px 0;
+    }
+}
+
+/* responsive style tablet end */
+
+/* responsive style tablet start */
+@media screen and (max-width:767px) {
+    .nav.container .branding {
+        margin-right: 0px;
+    }
+
+    .nav.container .branding img {
+        height: 56px;
+    }
+
+    .nav-left,
+    .nav-left ul {
+        gap: 14px;
+    }
+
+    .nav {
+        padding: 12px 0;
+        justify-content: space-around;
+    }
+
+    .hero {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 98%, 0 100%);
+    }
+
+    .hero .container {
+        padding: 20px;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 120px;
+    }
+
+    .nav-left,
+    .nav-left ul,
+    .nav {
+        flex-direction: column;
+    }
+
+    .hero-details {
+        width: 85%;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .hero-details h1 {
+        font-size: 24px;
+    }
+
+    .hero-details p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .about-me {
+        gap: 12px;
+        padding-top: 62px;
+        padding-bottom: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .about-me-image{
+        padding: 0 20px;
+    } */
+    .about-me-image img {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .our-services {
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .services-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-services .head-section {
+        padding: 52px 0;
+    }
+
+    .freelancer-section h2 {
+        font-size: 24px;
+    }
+
+    .freelancer-section {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+    }
+
+    .our-client-section .head-section {
+        padding: 32px 20px;
+    }
+
+    .our-work-section .our-works {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .our-blog-section .head-section {
+        padding: 32px 20px;
+    }
+
+    .our-blog-section {
+        margin-top: 52px;
+        padding-bottom: 100px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%, 0 100%);
+    }
+    .our-blog-section .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .contact-us-section .contacts {
+        gap: 24px;
+        flex-direction: column;
+    }
+    .contact-us-section .contacts .contact h3 {
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .message fieldset {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+        padding: 12px;
+        margin: 8px;
+    }
+
+    .message .subject,
+    .message .msg,
+    .message .submit-btn {
+        grid-column: 1/span 1;
+        
+    }
+    .message input,.message .msg{
+        border: 1px solid var(--ternary);
+    }
+    footer .footer-logo img {
+        height: 100px;
+    }
+    footer .social {
+        gap: 10px;
+    }
+    .head-section p {
+        font-size: 14px;
+        padding: 0 12px;
+    }
+    .message .submit-btn {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
+/* responsive style tablet end */
